@@ -54,6 +54,26 @@ llm_projects/
 - **Entry point:** `uv run python main.py` (or `python main.py` with venv activated)
 - **Notebooks:** Open any `.ipynb` from a project folder (e.g. `dog-concierge/concierge.ipynb`) in Jupyter.
 
+## Running tests
+
+From the repo root, run all tests:
+
+```bash
+uv run pytest
+```
+
+To run tests for a specific project (e.g. dog-concierge):
+
+```bash
+cd dog-concierge && uv run pytest -v
+```
+
+Or from the root with a path:
+
+```bash
+uv run pytest dog-concierge/ -v
+```
+
 ## Projects
 
 | Project           | Description                          |
